@@ -11,19 +11,20 @@ var entryLeft = 10;
 // Event listener section
 window.addEventListener('keydown', function() { 
 		
-    if (entryLeft > 0){  /* as long as any attempt left it will execute this section */
+    if (entryLeft > 0){  // as long as any attempt left it will execute this section
         getRandomLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
 
-        var x = event.charCode || event.keyCode;  // Get the Unicode value
-        var y = String.fromCharCode(x);  // Convert the value into a character	
+        var usercode = event.charCode || event.keyCode;  // Get the Unicode value
+        var userletter = String.fromCharCode(usercode).toLowerCase();  // Convert the value into a character	
 
-        if (y.toLowerCase() === getRandomLetter) {
+        // keeping the score here
+        if (userletter === getRandomLetter) {
             winN++;
         } else {
             loseN++;
         }
         
-        totalEntry.push(y.toLowerCase());					
+        totalEntry.push(userletter);					
         entryLeft--;
 
         // display updated score
