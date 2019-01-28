@@ -1,0 +1,51 @@
+body {    
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 34px;
+  color: black;
+  background-color: #fff);
+}
+.gamehead {
+    max-width: 980px;
+    margin: auto;
+    border: 2px solid black;
+    font-size: 34px;
+    line-height: 48px;
+    text-align: center;
+}
+.container {    
+    max-width: 980px;
+    margin: auto;
+    background-image: url( "../images/Background 2.jpg" );
+    background-size: contain;
+    border: 2px solid black;
+}
+.inner {
+    max-width: 880px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid black
+}
+.mylabel {
+    margin-left: 40px;
+    font-size: 24px;
+}
+.labelhead {
+    font-weight: 600;
+    text-decoration: underline;
+}
+.winlabel,
+#userwin {
+    color: green;
+    font-weight: 600;
+}
+.loselabel,
+#userlose {
+    color: red;
+    font-weight: 600;
+}
+#gameover {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 48px;
+    color: red;
+}
