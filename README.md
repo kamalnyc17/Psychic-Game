@@ -6,9 +6,9 @@ lowercase and compares if the user picked the same letter as the computer.
 
 3. The script will update following fields in real time:
 
-# of Win, 
-# of Lose,
-# of Guesses left, and
+Number of Win, 
+Number of Lose,
+Number of Guesses left, and
 The letters user gussed so far.
 
 4. For any additional question, contact me at kamalnyc17@gmail.com.
