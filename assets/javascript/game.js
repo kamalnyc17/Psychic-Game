@@ -31,11 +31,9 @@ window.addEventListener('keydown', function() {
         document.getElementById("userwin").innerHTML = winN;
         document.getElementById("userlose").innerHTML = loseN;
         document.getElementById("userguess").innerHTML = entryLeft;
-        document.getElementById("userguesslist").innerHTML = totalEntry;
-            
-    } else { /* when no more attemp left, it will display game over */
-        
+        document.getElementById("userguesslist").innerHTML = totalEntry;            
+    } 
+    if (entryLeft <= 0) { /* when no more attemp left, it will display game over */        
         document.getElementById("gameover").innerHTML = "GAME OVER! Reload the page to restart.";
     }
-
 });
